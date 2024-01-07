@@ -79,9 +79,12 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 8px;
-    color: #fff;
+    color: rgba(133, 102, 96, 0.5);
     text-align: center;
     line-height: 65px;
+   
+    font-size: 1.5rem;
+    
   }
   
   .result #copy-btn {
