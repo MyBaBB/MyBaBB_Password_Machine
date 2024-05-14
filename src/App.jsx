@@ -107,13 +107,7 @@ function App() {
                 </div>
             </Card>
             <span className="text-slate-300 text-sm">
-                Developed by{" "}
-                <a
-                    className="text-orange-500 font-medium no-underline hover:underline"
-                    href="https://github.com/devenapuros"
-                >
-                    @devenapuros
-                </a>
+               
             </span>
         </MainSection>
     );
