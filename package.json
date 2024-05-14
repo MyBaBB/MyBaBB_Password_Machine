@@ -2,7 +2,7 @@
   "name": "my-password-machine",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mybabb.github.io/MyBaBB_Password_Machine",
+  "homepage": "https://mybabb.github.io/MyBaBB_Password_Machine/",
   
   "type": "module",
   "scripts": {
