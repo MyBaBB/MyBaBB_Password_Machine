@@ -2,7 +2,7 @@
   "name": "my-password-machine",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mybabb.github.io/MyBaBB_Password-Machine-Live/",
+  "homepage": "https://mybabb.github.io/MyBaBB_Password-Machine/",
   "type": "module",
   "scripts": {
     "predeploy":  "npm run build",
