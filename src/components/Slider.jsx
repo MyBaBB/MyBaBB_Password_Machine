@@ -21,6 +21,7 @@ export const Slider = ({ value = 0, handleChange, min = 0, max = 100 }) => {
                 max={max}
                 value={value}
                 onChange={handleChange}
+                
             />
         </div>
     );
