@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
 import { generateMiduPass } from "./modules/generatePass";
 import { MainSection } from "./components/MainSection";
@@ -33,6 +35,7 @@ function App() {
     }, [passLength, lowercase, uppercase, numbers, symbols, reload]);
 
     return (
+        <>
         <MainSection>
             <Card>
                 <Brand />
@@ -104,12 +107,22 @@ function App() {
                             disabled={!lowercase && !uppercase && !numbers}
                         />
                     </div>
+                   
                 </div>
             </Card>
-            <span className="text-slate-300 text-sm">
-               
+            <a
+                   
+                    href="https://mybabb.com"
+                >
+            <span className="text-slate-500 text-sm">
+                Presented by{" "}
+                   <span  className="text-orange-500 font-medium no-underline hover:underline">
+                     Brett Baker
+                   </span>           
             </span>
+            </a>
         </MainSection>
+        </>
     );
 }
 

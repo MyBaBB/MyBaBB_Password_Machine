@@ -3,6 +3,7 @@ import React from "react";
 import { TfiNotepad } from "react-icons/tfi";
 import styles from "../styles/brand.module.css";
 import { PiRewindCircleFill } from "react-icons/pi";
+ 
 export const Brand = () => {
     return (
         <header className={styles.header}>
@@ -17,6 +18,7 @@ export const Brand = () => {
                    <span className="myName text-blue-900">Brett Baker</span>
                 </h1>
                 <small>Password Generator</small>
+                 
             </div>
         </header>
     );
