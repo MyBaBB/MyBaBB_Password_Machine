@@ -18,7 +18,7 @@ function App() {
   // useRef hook
   const passwordRef = useRef(null)
   const strengthIndicatorRef = useRef(null)
-
+  
   const copyToClipboard = useCallback(() => {
     passwordRef.current?.select()
     window.navigator.clipboard.writeText(password)
@@ -93,7 +93,11 @@ function App() {
             />
             <IconCopy
               className='transition-colors duration-150 cursor-pointer text-mint-200 hover:text-mint-400'
-              onClick={copyToClipboard}
+              
+              onClick={() => {
+                copyToClipboard();
+                setPassword('');
+              }}
             />
           </div>
 
@@ -130,7 +134,7 @@ function App() {
                   className='transition-colors duration-150 cursor-pointer text-mint-50 hover:text-mint-100'
                   htmlFor='uppercase'
                 >
-                  include uppercase letters
+                  Include Uppercase Letters
                 </label>
               </li>
               <li className='flex items-center gap-2'>
@@ -146,7 +150,7 @@ function App() {
                   className='transition-colors duration-150 cursor-pointer text-mint-50 hover:text-mint-100'
                   htmlFor='lowercase'
                 >
-                  include lowercase letters
+                  Include Lowercase letters
                 </label>
               </li>
               <li className='flex items-center gap-2'>
@@ -162,7 +166,7 @@ function App() {
                   className='transition-colors duration-150 cursor-pointer text-mint-50 hover:text-mint-100'
                   htmlFor='numbers'
                 >
-                  include numbers
+                  Include Numbers
                 </label>
               </li>
               <li className='flex items-center gap-2'>
@@ -178,7 +182,7 @@ function App() {
                   className='transition-colors duration-150 cursor-pointer text-mint-50 hover:text-mint-100'
                   htmlFor='symbols'
                 >
-                  include symbols
+                  Include Symbols
                 </label>
               </li>
             </ul>
@@ -196,10 +200,14 @@ function App() {
                     className='flex items-center gap-1'
                     ref={strengthIndicatorRef}
                   >
-                    <li className='w-[6px] h-4 [&.active]:bg-mint-300 [&.active]:border-transparent border border-mint-50 active'></li>
-                    <li className='w-[6px] h-4 [&.active]:bg-mint-400 [&.active]:border-transparent border border-mint-50 active'></li>
-                    <li className='w-[6px] h-4 [&.active]:bg-mint-500 [&.active]:border-transparent border border-mint-50'></li>
-                    <li className='w-[6px] h-4 [&.active]:bg-mint-600 [&.active]:border-transparent border border-mint-50'></li>
+                    <li className='w-[6px] h-4 [&.active]:bg-amber-900 [&.active]:border-transparent border border-blue-400'></li>
+                    <li className='w-[6px] h-4 [&.active]:bg-green-900 [&.active]:border-transparent border border-blue-400'></li>
+                    
+
+                    
+                    <li className='w-[6px] h-4 [&.active]:bg-green-600 [&.active]:border-transparent border border-blue-400 active'></li>
+                    <li className='w-[6px] h-4 [&.active]:bg-green-400 [&.active]:border-transparent border border-blue-400 active'></li>
+                    
                   </ul>
                 </div>
               </div>
@@ -209,7 +217,7 @@ function App() {
               type='button'
               className='flex items-center justify-center w-full h-10 mt-2 text-sm font-bold uppercase transition-colors duration-150 shadow-md outline-none bg-mint-200 hover:bg-mint-300 active:shadow-none focus:outline-1 focus:outline-cinder disabled:bg-gray-500'
               onClick={passwordGenerator}
-              disabled={password.length <= 0}
+              // disabled={password.length <= 0}   I Removed this after I made the copy button clear the password.
             >
               Generate
             </button>

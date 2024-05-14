@@ -3,6 +3,8 @@ export const Metric = {
   Medium: 'medium',
   Strong: 'strong',
   Perfect: 'perfect',
+ 
+ 
 }
 
 /**
@@ -25,17 +27,33 @@ export default function checkPasswordStrength(value) {
   if (value.match(/[a-z]+/)) {
     strength += 1
   }
-  if (value.match(/[0-9]+/)) {
+  if (value.length >= 15) {
     strength += 1
   }
-  if (value.match(/[!@#$%^&*()_+-={}[\];<>:]+/)) {
+  if (value.length >= 20) {
     strength += 1
   }
+ 
+  
+
 
   if (strength <= 1) metric = Metric.Weak
   else if (strength === 2) metric = Metric.Medium
   else if (strength === 3) metric = Metric.Strong
   else if (strength === 4) metric = Metric.Perfect
+  
 
   return { strength, metric }
 }
+
+
+//  this is the original code. if there are more than 4 if statements, the code will not work.}
+// if (value.match(/[0-9]+/)) {
+//   strength += 1
+// }
+// if (value.match(/[!@#$%^&*()_+-={}[\];<>:]+/)) {
+//   strength += 1
+  //      if (value.match(/[a-z]+/)) {
+//  strength += 1
+    // }
+// }
