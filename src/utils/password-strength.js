@@ -27,12 +27,15 @@ export default function checkPasswordStrength(value) {
   if (value.match(/[a-z]+/)) {
     strength += 1
   }
-  if (value.length >= 15) {
+  if (value.match(/[0-9]+/)) {
     strength += 1
   }
-  if (value.length >= 20) {
+  if (value.match(/[!@#$%^&*()_+-={}[\];<>:]+/)) {
     strength += 1
-  }
+
+        
+      }
+ 
  
   
 
@@ -53,7 +56,12 @@ export default function checkPasswordStrength(value) {
 // }
 // if (value.match(/[!@#$%^&*()_+-={}[\];<>:]+/)) {
 //   strength += 1
-  //      if (value.match(/[a-z]+/)) {
+//        if (value.match(/[a-z]+/)) {
 //  strength += 1
-    // }
-// }
+//     }
+//     if (value.length >= 15) {
+//       strength += 1
+//     }
+//     if (value.length >= 20) {
+//       strength += 1
+//     }
