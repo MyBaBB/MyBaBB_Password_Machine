@@ -14,7 +14,7 @@ import { Slider } from "./components/Slider";
 import { PrimaryButton } from "./components/PrimaryButton";
 import { ReloadIcon } from "./icons/ReloadIcon";
 import { ToggleLabel } from "./components/ToggleLabel";
-
+import "../src/styles/brand.module.css";
 function App() {
     const [password, setPassword] = useState("");
     const [passLength, setPassLength] = useState(23);
@@ -39,7 +39,7 @@ function App() {
         <>
         
         <MainSection>
-        <div className="mt-8  text-center ">
+        <div className="cardWrapper2 mt-8  text-center ">
             <Card>
                 <Brand />
                 <div className="flex flex-col gap-3">
@@ -66,7 +66,7 @@ function App() {
                             max={66}
                         />
                     </div>
-                    <div className="flex justify-between items-center">
+                    <div className="flex  justify-between items-center">
                         <ToggleLabel
                             content="Include lowercase characters"
                             active={lowercase}

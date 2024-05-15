@@ -14,9 +14,11 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 22px;
-	border: 2px solid #00000015;
+	border: 2px solid #000;
 }
-
+.myName {
+	text-shadow: 1px 1px 1px #000;
+}
 .brandTitle {
 	text-align: center;
 }

@@ -22,8 +22,8 @@ export const PasswordQuality = ({ length = 0, min = 0, max = 100 }) => {
     }, [length]);
 
     return (
-        <div className={styles.qualityContainer}>
-            <span>Password quality</span>
+        <div className={styles.qualityContainer} >
+            <span className="font-ArchivoBlack-Regular">Password quality</span>
             <div className={styles.qualityBar}>
                 <div className={styles.qualityBar} ref={indicatorRef}>
                     <span className={styles.qualityIndicator}></span>

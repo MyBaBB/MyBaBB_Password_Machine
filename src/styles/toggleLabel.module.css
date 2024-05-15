@@ -1,8 +1,14 @@
 .label {
-	color: #4a4a4a;
+	color: black;
 	transition: color 300ms ease;
+	text-shadow: 1px 1px 1px white;
+	 
 }
 
 .active {
 	color: #000;
+}
+.label5 {
+	color: green;
+		text-shadow: 1px 1px 1px white;
 }
