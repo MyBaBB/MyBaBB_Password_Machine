@@ -8,8 +8,9 @@ export const ToggleSwitch = ({ active, handleClick, disabled }) => {
             }`}
             onClick={handleClick}
             disabled={disabled}
-        >
+        >    <span  className={styles.toggleCircleWrapper}>
             <span className={styles.toggleCircle}></span>
+            </span>
         </button>
     );
 };

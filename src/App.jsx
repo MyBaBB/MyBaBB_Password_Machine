@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 import { useEffect, useState } from "react";
@@ -36,7 +37,9 @@ function App() {
 
     return (
         <>
+        
         <MainSection>
+        <div className="mt-8  text-center ">
             <Card>
                 <Brand />
                 <div className="flex flex-col gap-3">
@@ -121,7 +124,9 @@ function App() {
                    </span>           
             </span>
             </a>
+            </div>   
         </MainSection>
+    
         </>
     );
 }
