@@ -63,7 +63,7 @@ function App() {
                                 setPassLength(event.target.value)
                             }
                             min={6}
-                            max={66}
+                            max={65}
                         />
                     </div>
                     <div className="flex  justify-between items-center">
