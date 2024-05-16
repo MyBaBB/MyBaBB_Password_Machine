@@ -2,6 +2,6 @@
 
 ## password machine
 
-"This is my customized password management system, meticulously tailored to my preferences. I rely on it daily, finding it exceptionally convenient."
+A private Password maker for your personal use that has a link to a notepad that I made to copy paste and edit. up to 32 characters.  No body has Access to it but yourself. Notepad is on a separate site.  
 
-![Password Machine](PasswordMachineImg.png)
+![Password Machine](PasswordMachineImg.jpg)
