@@ -17,7 +17,7 @@ body * {
 
 @font-face {
   font-family: "Archivo_Black";
-  src: url(../GoogleFonts/ArchivoBlack-Regular.ttf);
+  src: url(../../GoogleFonts/ArchivoBlack-Regular.ttf);
 }
 @font-face {
   font-family: "Aclonica-Regular";

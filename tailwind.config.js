@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-import defaultTheme from 'tailwindcss/defaultTheme'
+ 
 
 export default {
   content: ['./index.html', './src/**/**.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-         sans: ['"JetBrains Mono"', ...defaultTheme.fontFamily.sans],
+         
         'Aclonica-Regular': ['Aclonica-Regular', 'sans-serif'],
         'ArchivoBlack-Regular': ['ArchivoBlack-Regular', 'sans-serif'],
         'Blackbeard-ld7V' : ['Blackbeard-ld7V', 'cursive'],
