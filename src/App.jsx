@@ -12,16 +12,18 @@ import { PasswordQuality } from "./components/PasswordQuality";
 import { PassLengthLabel } from "./components/PassLengthLabel";
 import { Slider } from "./components/Slider";
 import { PrimaryButton } from "./components/PrimaryButton";
-import { ReloadIcon } from "./icons/ReloadIcon";
+import { TbRefreshAlert } from "react-icons/tb";
 import { ToggleLabel } from "./components/ToggleLabel";
 import "../src/styles/brand.module.css";
+
+
 function App() {
     const [password, setPassword] = useState("");
     const [passLength, setPassLength] = useState(23);
     const [lowercase, setLowercase] = useState(true);
     const [uppercase, setUppercase] = useState(true);
-    const [numbers, setNumbers] = useState(false);
-    const [symbols, setSymbols] = useState(true);
+    const [numbers, setNumbers] = useState(true);
+    const [symbols, setSymbols] = useState(false);
     const [reload, setReload] = useState(false);
 
     useEffect(() => {
@@ -49,7 +51,7 @@ function App() {
                             disabled={!password}
                             handleClick={() => setReload(!reload)}
                         >
-                            <ReloadIcon />
+                            <TbRefreshAlert size={30} />
                         </PrimaryButton>
                     </div>
                     <PasswordQuality length={passLength} min={6} max={66} />
@@ -63,10 +65,10 @@ function App() {
                                 setPassLength(event.target.value)
                             }
                             min={6}
-                            max={65}
+                            max={32}  
                         />
                     </div>
-                    <div className="flex  justify-between items-center">
+                    <div className="flex  justify-between items-center ">
                         <ToggleLabel
                             content="Include lowercase characters"
                             active={lowercase}

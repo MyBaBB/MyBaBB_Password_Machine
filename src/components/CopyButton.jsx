@@ -1,4 +1,4 @@
-import { CopyIcon } from "../icons/CopyIcon";
+import { CgCopy } from "react-icons/cg";
 import styles from "../styles/copyButton.module.css";
 
 export const CopyButton = ({ handleClick, disabled }) => {
@@ -7,7 +7,7 @@ export const CopyButton = ({ handleClick, disabled }) => {
             className={`${styles.copyButton} ${disabled && styles.disabled}`}
             onClick={handleClick}
         >
-            <CopyIcon />
+            <CgCopy size={25} color="navy" />
         </button>
     );
 };

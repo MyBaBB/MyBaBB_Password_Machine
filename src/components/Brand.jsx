@@ -10,9 +10,9 @@ export const Brand = () => {
              <div className="relative flex">
             <a href="https://mybabb.github.io/MyBABB-Remember/">
             
-            <div className={styles.iconContainer}>
-            <TfiNotepad size={50} color="blue"/>
-             <span className="absolute top-[1.5rem] text-green-600"><PiRewindCircleFill size={30}/></span>
+            <div className={styles.iconContainer }>
+            <TfiNotepad size={80} color="navy"  />
+             <span className="absolute top-[1.5rem] text-green-600 "><PiRewindCircleFill size={35}/></span>
             </div>
         
             </a>
@@ -20,9 +20,9 @@ export const Brand = () => {
             <div className={styles.brandTitle}>
 
                 <h1 className="yourPersonal font-LibreBaskerville-Bold text-blue-950">
-                    Your Personal 
+                    Your Private 
                 </h1>
-                <small>Password Generator</small>
+                <bold>Password Generator</bold>
                 </div>            
             
         </header>

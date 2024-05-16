@@ -10,9 +10,12 @@ export const Slider = ({ value = 0, handleChange, min = 0, max = 100 }) => {
 
     return (
         <div className={styles.container}>
+           
             <span className={styles.bar}>
-                <span ref={fillRef} className={styles.fill} />
+                <span ref={fillRef} className={styles.fill}/>
+              
             </span>
+           
             <input
                 id="slider"
                 className={styles.slider}

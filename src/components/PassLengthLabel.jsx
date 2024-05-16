@@ -5,8 +5,8 @@ import styles from "../styles/passLengthLabel.module.css";
 export const PassLengthLabel = ({ length }) => {
     return (
         <div className={styles.container}>
-            <span className="  font-Rye-Regular text-lg text-gray-800"
-             style={{ textShadow: "1px 1px 1px #fff" }}>Password length</span>
+            <span className="  font-Orbitron-VariableFont_wght font-extrabold text-black"
+             style={{ textShadow: "1px 1px 2px  #fff" }}>Password length</span>
             <span className={styles.result}>{length}</span>
         </div>
     );
