@@ -68,9 +68,10 @@ function App() {
                             max={32}  
                         />
                     </div>
-                    <div className="flex  justify-between items-center ">
+                    <div className="flex  justify-between items-center text-left
+                             text-[12px] xxs:text-[17px]  xs:text-[22px] ">
                         <ToggleLabel
-                            content="Include lowercase characters"
+                            content="Include lowercase "
                             active={lowercase}
                         />
                         <ToggleSwitch
@@ -79,9 +80,10 @@ function App() {
                             disabled={!uppercase && !numbers && !symbols}
                         />
                     </div>
-                    <div className="flex justify-between items-center">
-                        <ToggleLabel
-                            content="Include uppercase characters"
+                    <div className="flex justify-between items-center text-left 
+                    text-[12px] xxs:text-[17px]  xs:text-[22px]   ">
+                        <ToggleLabel 
+                            content="Include uppercase "
                             active={uppercase}
                         />
                         <ToggleSwitch
@@ -90,7 +92,8 @@ function App() {
                             disabled={!lowercase && !numbers && !symbols}
                         />
                     </div>
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center text-left
+                             text-[12px] xxs:text-[17px]  xs:text-[22px]">
                         <ToggleLabel
                             content="Include numbers"
                             active={numbers}
@@ -101,7 +104,8 @@ function App() {
                             disabled={!lowercase && !uppercase && !symbols}
                         />
                     </div>
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center text-left
+                     text-[12px] xxs:text-[17px]  xs:text-[22px]">
                         <ToggleLabel
                             content="Include symbols"
                             active={symbols}

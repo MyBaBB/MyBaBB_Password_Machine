@@ -27,7 +27,9 @@ export const PasswordQuality = ({ length = 0, min = 0, max = 100 }) => {
 
     return (
         <div className={styles.qualityContainer} >
-            <span className="font-Orbitron-VariableFont_wght font-extrabold">Password quality</span>
+            <span className="font-Orbitron-VariableFont_wght font-extrabold
+             text-[12px] xxs:text-[15px]  xs:text-[20px] ">
+                Safeguard</span>
             <div className={styles.qualityBar}>
                 <div className={styles.qualityBar} ref={indicatorRef}>
                     <span className={styles.qualityIndicator}></span>
