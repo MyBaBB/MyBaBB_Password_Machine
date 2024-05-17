@@ -1,10 +1,9 @@
 .label {
-	color: black;
-	transition: color 300ms ease;
-	text-shadow: 1px 1px 1px white;
-	 
+  color: black;
+  transition: color 300ms ease;
+  text-shadow: 1px 1px 1px white;
 }
 
 .active {
-	color: #000;
+  color: #000;
 }
