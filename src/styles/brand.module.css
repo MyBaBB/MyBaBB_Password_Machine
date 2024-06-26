@@ -11,8 +11,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
+  margin-top: -1.75rem;
+  
 }
 .myName {
   text-shadow: 1px 1px 1px #000;
