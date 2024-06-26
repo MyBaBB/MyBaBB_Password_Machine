@@ -2,12 +2,12 @@
   "name": "password-machine",
   "private": true,
   "version": "0.0.0",
-  "homepage": "",
+  
   "type": "module",
   "scripts": {
 
     "predeploy":  "npm run build",
-    "deploy": "gh-pages -d build",
+     
     "start":  "react-scripts start",
     "dev": "vite",
     "build": "vite build",

@@ -9,19 +9,19 @@ export const Brand = () => {
   return (
     <header className={styles.header}>
       <div className="relative flex">
-        <a href="https://mybabb.github.io/MyBABB-Remember/">
+        <a href="#" onClick={(e) => {e.preventDefault();window.history.back();}}>
           <div className={styles.iconContainer}>
             <img src={Notepad} alt="Notepad" width={192}/>
             <span className="absolute z-10    
-             top-[.25rem] left-[1.25rem] text-red-400 ">
+             top-[.25rem] left-[1.25rem] text-lime-400 ">
               <PiRewindCircleLight    size={45} />
             </span>
           </div>
         </a>
       </div>
       <div className={styles.brandTitle}>
-        <h1 className="betaVersion font-LibreBaskerville-Bold text-red-400">
-          Beta-Version
+        <h1 className="yourPersonal font-LibreBaskerville-Bold text-blue-800">
+          Your Personal
         </h1>
         <bold>Password Generator</bold>
       </div>
