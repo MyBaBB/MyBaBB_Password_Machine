@@ -9,7 +9,7 @@ export const Brand = () => {
   return (
     <header className={styles.header}>
       <div className="relative flex">
-        <a href="https://fishy-notepad.mybabb.com/">
+        <a onClick={() => window.history.back()}>
           <div className={styles.iconContainer}>
             <img src={Notepad} alt="Notepad" width={192}/>
             <span className="absolute z-10    
